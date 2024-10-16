@@ -5,7 +5,7 @@ Code for [RobustPT : Dynamic Disentanglement Prompt Tuning in Vision-Language Mo
 Recently, prompt tuning has garnered considerable attention due to its success across various Vision-Language (VL) tasks. However, unimodal prompts, coupled prompts, and joint prompts in these models often lead to suboptimal performance due to differences in information density and complexity between modalities. Particularly, in scenarios with missing modalities, these prompt-based approaches tend to exacerbate ‘Channel Bias’-a phonomenon where models overly rely on specific feature (such as unmissing-modal feature) channels from the base tasks, thereby undermining the model's ability to capture crucial shared knowledge applicable to new tasks and affecting its generalizability. To address this challenge, we propose **RobustPT**, a dynamic disentanglement prompt tuning model designed to enhance the robustness of VL models under modality missing conditions. RobustPT utilizes a multi-channel prompting mechanism to dynamically disentangle and align prompts. Specifically, RobustPT is divided into single-channel tuning and alignment-channel tuning, where prompts for each modality run independently in sequence to delve deeply into their intrinsic characteristics, followed by an integration through a non-strong coupling strategy to effectively balance information contributions and enhance overall performance. Extensive experiments demonstrate that our RobustPT achieve significant improvements over the current state-of-the-art across all benchmark datasets.
 
 <div align="center">
-  <img src="fig/model2.png"/>
+  <img src="fig/model3.png"/>
 </div>
 
 
